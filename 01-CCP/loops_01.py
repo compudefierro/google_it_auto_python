@@ -1,3 +1,21 @@
+# recursive function to reverse a string with 1 parameter
+def reverse(s):
+    """
+    Reverses a string recursively.
+
+    Parameters:
+    s (str): The input string to be reversed.
+
+    Returns:
+    str: The reversed string.
+    """
+    if len(s) <= 1:
+        return s
+    else:
+        return reverse(s[1:]) + s[0]
+
+print(reverse('jorge'))
+
 def sumas(num1, num2):
     return num1 + num2
 
